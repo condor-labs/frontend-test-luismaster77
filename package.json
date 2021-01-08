@@ -1,0 +1,25 @@
+{
+  "name": "hiring-frontend-test-smoke-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/condor-labs/hiring-frontend-test-smoke-tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/condor-labs/hiring-frontend-test-smoke-tests/issues"
+  },
+  "homepage": "https://github.com/condor-labs/hiring-frontend-test-smoke-tests#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "jest": "^26.4.0",
+    "moment": "^2.27.0",
+    "puppeteer": "^5.2.1"
+  }
+}
