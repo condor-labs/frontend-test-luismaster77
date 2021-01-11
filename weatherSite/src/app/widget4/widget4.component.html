@@ -1,0 +1,19 @@
+<span class="title-text-widget4">HEADQUARTER SUGGESTED</span>
+<div *ngIf="places && suggested" id="widget-suggest">
+    <div class="widget-icon">
+        <i class="wi wi-day-{{icon}} wi-icon"></i>
+    </div>
+    <div class="widget-headquarter">
+        <span><i class="fa fa-map-marker"></i> {{ toUpperCase(suggested.city.name) }} - {{ suggested.city.country}}</span>
+        <div class="widget-temperature">
+            {{ converterDegreesValue(suggestedData.main.temp) | number:'1.0-0' }}°C
+            <div class="data-text">
+                <i class="wi wi-moon-full primary"></i><span class="widget-humidity">{{ suggestedData.main.humidity }}%</span>
+                <i class="wi wi-moon-full secundary"></i><span class="widget-wind">{{ suggestedData.wind.speed }}m/s</span>
+                <i class="widget-day">{{toUpperCase(suggestedData.date)}}</i>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>

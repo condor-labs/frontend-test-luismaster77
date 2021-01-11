@@ -1,0 +1,30 @@
+<div *ngIf="forecast.length > 0" id="widget-carousel">
+    <span class="title-text-widget2">FORECAST  EXTENDED</span>
+    <div *ngFor="let item of forecast">
+        <div class="fade">
+            <div class="widget-carousel-item">
+                <p class="widget-day">{{item.date}}</p>
+                <p class="widget-temperature">{{ converterDegreesValue(item.main.temp) | number:'1.0-0' }} °C</p>
+                <div class="small-value">
+                    <i class="wi wi-moon-full primary"></i>
+                    <div class="widget-humidity">{{ item.main.humidity }}%</div>
+                    <i class="wi wi-moon-full secundary"></i>
+                    <div class="widget-wind">{{ item.wind.speed }}m/s</div>
+                </div>
+            </div>
+        </div>
+        <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+        <a class="next" (click)="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" (click)="currentSlide(1)"></span>
+        <span class="dot" (click)="currentSlide(2)"></span>
+        <span class="dot" (click)="currentSlide(3)"></span>
+        <span class="dot" (click)="currentSlide(4)"></span>
+        <span class="dot" (click)="currentSlide(5)"></span>
+        <span class="dot" (click)="currentSlide(6)"></span>
+    </div>
+</div>
+<br>
+<br>

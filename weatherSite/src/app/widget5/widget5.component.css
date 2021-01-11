@@ -1,0 +1,52 @@
+#widget-cities {
+    display: flex;
+    background-color: rgb(229, 226, 226);
+    border-radius: 20px;
+    width: 16%;
+    height: 250px;
+    margin: 30px;
+    font-family: "Lato";
+    float: left;
+    background-size: 100% 100%;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 6%;
+}
+
+.widget-card {
+    position: absolute;
+}
+
+.widget-city-name {
+    font-family: "Lato";
+    font-weight: bold;
+    color: white;
+    width: 100px;
+    text-align: right;
+    margin: 35% 70% 10% 80%;
+}
+
+.style-button {
+    margin-inline: auto;
+    margin-top: 90%;
+    float: left;
+    width: 70%;
+    background-color: #5A00EA;
+    border-radius: 10px;
+    height: 30px;
+    text-align: center;
+    padding-top: 2%
+}
+
+.style-text-a {
+    color: white;
+    text-decoration-line: none
+}
+
+.title-text-widget5 {
+    color: #5a00ea;
+    font-weight: bold;
+    font-family: "Lato";
+    margin: 30px;
+    font-size: x-large;
+    margin-left: 85vh;
+}

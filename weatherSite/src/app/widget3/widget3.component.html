@@ -1,0 +1,26 @@
+<span class="title-text-widget3">OUR FAVORITE PLACES</span>
+<div *ngIf="places" id="widget-favorite">
+    <div *ngFor="let item of places" class="widget-card">
+        <div class="image-text">
+            <div class="content-image">
+                <div class="image-circle" [ngStyle]="{ 'background-image': 'url(' + item.image + ')'}"></div>
+            </div>
+            <div class="text-content">
+                <span class="widget-headquarter-name"><i class="fa fa-map-marker"></i> {{ toUpperCase(item.name) }} - {{ item.sys.country}}</span>
+                <span class="description-text">Lorem ipsum dolor sit, amet...</span>
+                <div class="data-text">
+                    <i class="wi wi-moon-full three"></i><span class="widget-temperature">{{ converterDegreesValue(item.main.temp) | number:'1.0-0' }}°C</span>
+                    <i class="wi wi-moon-full primary"></i><span class="widget-humidity">{{ item.main.humidity }}%</span>
+                    <i class="wi wi-moon-full secundary"></i><span class="widget-wind">{{ item.wind.speed }}m/s</span>
+                </div>
+            </div>
+        </div>
+        <div class="widget-icon">
+            <div *ngFor="let data of item.weather">
+                <i class="wi wi-day-{{data.icon}} wi-icon"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>

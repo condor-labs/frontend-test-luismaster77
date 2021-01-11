@@ -1,0 +1,122 @@
+#widget-suggest {
+    display: flex;
+    background-color: rgb(229, 226, 226);
+    border-radius: 20px;
+    width: 30%;
+    margin: 30px;
+    font-family: "Lato";
+    height: 170px;
+    background: linear-gradient(to right, #597Aef, #5A00EA);
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 70vh;
+}
+
+@media screen and (max-width: 480px) {
+    #widget-suggest {
+        width: calc(100% - 80px);
+    }
+}
+
+.container {
+    flex: content;
+}
+
+.widget-headquarter {
+    font-weight: bold;
+    color: white;
+    margin-left: 10%;
+    margin-top: inherit;
+    -webkit-box-flex: 0;
+    flex: none;
+    height: 10px
+}
+
+.title-text-widget4 {
+    color: #5A00EA;
+    font-weight: bold;
+    font-family: "Lato";
+    margin: 30px;
+    font-size: x-large;
+    margin-left: 75vh;
+}
+
+.small-value {
+    display: flex;
+    width: 15%;
+    font-size: x-small;
+    margin-top: 12px;
+}
+
+.widget-icon {
+    float: right;
+    position: absolute;
+    margin-left: 23%;
+}
+
+.widget-humidity {
+    width: auto;
+    padding-left: 5px;
+}
+
+.widget-wind {
+    width: auto;
+    padding-left: 5px;
+}
+
+.text-value {
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 30px;
+}
+
+.primary {
+    color: #D95ECB;
+    font-size: x-small;
+}
+
+.secundary {
+    color: #597AEF;
+    padding-left: 20px;
+    font-size: x-small;
+}
+
+.three {
+    color: #FFB82C;
+    font-size: x-small;
+}
+
+.widget-temperature {
+    color: white;
+    font-size: -webkit-xxx-large;
+    margin-top: 5%;
+}
+
+.widget-humidity {
+    color: white;
+    padding-left: 7px;
+    font-size: x-small;
+}
+
+.widget-wind {
+    color: white;
+    padding-left: 7px;
+    font-size: x-small;
+}
+
+.widget-day {
+    color: #fbf6f6;
+    font-size: small;
+    font-family: 'Lato';
+    margin-left: 100%;
+    font-style: normal;
+}
+
+.data-text {
+    display: flex;
+    margin-top: 20%
+}
+
+.wi-icon {
+    font-size: 350%;
+    color: rgb(187, 177, 177);
+}

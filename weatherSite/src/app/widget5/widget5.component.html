@@ -1,0 +1,13 @@
+<span class="title-text-widget5"><strong>PLACE TO </strong>VISIT</span>
+<div *ngFor="let item of countries">
+    <div id="widget-cities" class="box-img" [ngStyle]="{ 'background-image': 'url(' + item.image + ')' }">
+        <div class="widget-card">
+            <div class="widget-city-name">
+                <span>{{ item.name }}</span>
+            </div>
+        </div>
+        <div class="style-button">
+            <a class="style-text-a" href="{{item.uri}}" target="_blank">VISIT PLACE</a>
+        </div>
+    </div>
+</div>

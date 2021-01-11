@@ -1,0 +1,124 @@
+#widget-favorite {
+    margin: 0 auto;
+    padding: 0 20px;
+    background: black;
+    border-radius: 10px;
+    width: inherit;
+}
+
+@media screen and (max-width: 480px) {
+    #widget-favorite {
+        width: calc(100% - 80px);
+    }
+}
+
+.widget-card {
+    display: flex;
+    background-color: rgb(229, 226, 226);
+    border-radius: 20px;
+    width: 30%;
+    margin: 30px;
+    font-family: "Lato";
+    float: left;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 5%;
+    margin-left: 25vh;
+}
+
+.content-image {
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.image-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-size: cover;
+}
+
+.wi-icon {
+    font-size: 50px;
+    color: rgb(97, 90, 90);
+    /*Default*/
+}
+
+.icon-weather {
+    margin-left: auto;
+}
+
+.widget-icon {
+    text-align: right;
+    width: 30%;
+}
+
+.image-text {
+    display: flex;
+}
+
+.text-content {
+    display: grid;
+    padding: 10px;
+    width: max-content;
+}
+
+.data-text {
+    margin-top: 6%;
+}
+
+.widget-temperature {
+    padding-left: 7px;
+    font-size: x-small;
+}
+
+.widget-humidity {
+    padding-left: 7px;
+    font-size: x-small;
+}
+
+.widget-wind {
+    padding-left: 7px;
+    font-size: x-small;
+}
+
+.widget-headquarter-name {
+    color: #5a00ea;
+    font-weight: bold;
+}
+
+.description-text {
+    color: #7c7c7c;
+}
+
+.title-text-widget3 {
+    color: #5a00ea;
+    font-weight: bold;
+    font-family: "Lato";
+    margin: 30px;
+    font-size: x-large;
+    margin-left: 80vh;
+}
+
+.primary {
+    color: #D95ECB;
+    margin-block: auto;
+    padding-left: 18px;
+    font-size: x-small;
+}
+
+.secundary {
+    color: #597AEF;
+    margin-block: auto;
+    padding-left: 20px;
+    font-size: x-small;
+}
+
+.three {
+    color: #FFB82C;
+    margin-block: auto;
+    font-size: x-small;
+}
+
+.widget-icon {
+    width: 50%;
+}

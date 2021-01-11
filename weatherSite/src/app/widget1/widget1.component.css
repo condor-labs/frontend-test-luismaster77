@@ -1,0 +1,120 @@
+#widget-header {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 50%;
+    background: black;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+    background-size: 100% 100%;
+}
+
+@media screen and (max-width: 480px) {
+    #widget-header {
+        width: calc(100% - 80px);
+    }
+}
+
+.image-font {
+    background-color: rgb(7, 102, 70);
+    background-size: 100% 100%;
+    border-radius: 20px;
+    color: #E6E6E6;
+    height: auto;
+    font-family: 'Lato';
+}
+
+.general-content {
+    display: flex;
+}
+
+.left-content {
+    width: 90%;
+    padding: 30px;
+}
+
+.header-style {
+    display: flex;
+    padding-bottom: 60px;
+}
+
+.place-div {
+    width: 50%;
+}
+
+.widget-headquarter {
+    float: left;
+    width: 135px;
+    background-color: #5A00EA;
+    border-radius: 10px;
+    height: 25px;
+    text-align: center;
+    padding-top: 3px;
+    font-weight: bold;
+}
+
+.widget-icon {
+    text-align: right;
+    width: 50%;
+}
+
+#weather-value {
+    text-shadow: 2px 2px black;
+}
+
+.widget-temperature {
+    font-size: 50px;
+}
+
+.small-value {
+    display: flex;
+    width: 15%;
+    font-size: x-small;
+    margin-top: 12px;
+}
+
+.widget-humidity {
+    width: auto;
+    padding-left: 5px;
+}
+
+.widget-wind {
+    width: auto;
+    padding-left: 5px;
+}
+
+.text-value {
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 30px;
+}
+
+.wi-icon {
+    font-size: 100px;
+    color: rgb(121, 109, 109);
+}
+
+.primary {
+    color: #D95ECB;
+    margin-block: auto;
+    padding-left: 18px;
+    font-size: x-small;
+}
+
+.secundary {
+    color: #597AEF;
+    margin-block: auto;
+    padding-left: 20px;
+    font-size: x-small;
+}
+
+.three {
+    color: #FFB82C;
+    margin-block: auto;
+    font-size: x-small;
+}
+
+.text-style {
+    padding-left: 7px;
+    font-size: x-small;
+}

@@ -1,0 +1,28 @@
+<div *ngIf="place" id="widget-header" class="image-font" [ngStyle]="{ 'background-image': 'url(' + place.image + ')' }">
+    <div class="general-content">
+        <div class="left-content">
+            <div id="header" class="header-style">
+                <div class="place-div">
+                    <div id="city-name" class="widget-headquarter">
+                        <i class="fa fa-map-marker"></i><span> {{ toUpperCase(place.name) }}</span>
+                    </div>
+                </div>
+            </div>
+            <div id="weather-value">
+                <div class="widget-temperature">
+                    {{ converterDegreesValue(place.main.temp) | number:'1.0-0' }}°C
+                </div>
+                <div class="small-value">
+                    <i class="wi wi-moon-full primary"></i>
+                    <div class="widget-humidity">{{ place.main.humidity }}%</div>
+                    <i class="wi wi-moon-full secundary"></i>
+                    <div class="widget-wind">{{ place.wind.speed }}m/s</div>
+                </div>
+                <div class="text-value">Good morning, Condor!</div>
+            </div>
+        </div>
+        <div class="widget-icon">
+            <i class="wi wi-day-{{icon}} wi-icon"></i>
+        </div>
+    </div>
+</div>
